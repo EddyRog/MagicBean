@@ -21,7 +21,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="senzu-beans-explained-dbz-thumb" translatesAutoresizingMaskIntoConstraints="NO" id="FGt-tu-h51" userLabel="picture">
                     <rect key="frame" x="16" y="20" width="343" height="267"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKw-kM-gwH">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKw-kM-gwH">
                     <rect key="frame" x="16" y="295" width="343" height="28"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="28" id="4Oh-fA-ZA3"/>
