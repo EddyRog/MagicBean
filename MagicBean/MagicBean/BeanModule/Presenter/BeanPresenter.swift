@@ -1,21 +1,33 @@
-//
-//  BeanPresenter.swift
-//  MagicBean
-//
-//  Created by Eddy R on 31/08/2020.
-//  Copyright © 2020 Eddy R. All rights reserved.
-//
+//  Presenter
+//  BeanPresenter
+
 
 import Foundation
+// MARK: - ViewModel Layer / Presenter
+struct BeanViewModel {
+    let name: String
+}
+
 
 protocol BeanPresenterProtocol: class {
-    
+    // delegate
+    func interactor(_ interactor: BeanInteractorProtocol, didFetch object: BeanEntity )
 }
 
 class BeanPresenter {
+    // MARK: - MM
     weak var view: BeanViewProtocol?
 }
 
 extension BeanPresenter: BeanPresenterProtocol {
     
+    // MARK: - MSG
+    func interactor(_ interactor: BeanInteractorProtocol, didFetch object: BeanEntity) {
+        // pre present data before go on the scene
+        let nameVM = "** \(object.name) **"
+        
+        let beanViewModel = BeanViewModel(name: nameVM)
+        view?.setView(with: beanViewModel)
+        
+    }
 }

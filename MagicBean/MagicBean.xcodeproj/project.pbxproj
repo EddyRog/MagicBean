@@ -20,6 +20,7 @@
 		9384454A24FD0578008285B4 /* BeanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454924FD0578008285B4 /* BeanPresenter.swift */; };
 		9384454C24FD05A6008285B4 /* BeanRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454B24FD05A6008285B4 /* BeanRouter.swift */; };
 		9384454E24FD05FB008285B4 /* BeanEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454D24FD05FB008285B4 /* BeanEntity.swift */; };
+		9384455024FD1692008285B4 /* BeanApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454F24FD1692008285B4 /* BeanApiWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		9384454924FD0578008285B4 /* BeanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanPresenter.swift; sourceTree = "<group>"; };
 		9384454B24FD05A6008285B4 /* BeanRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanRouter.swift; sourceTree = "<group>"; };
 		9384454D24FD05FB008285B4 /* BeanEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanEntity.swift; sourceTree = "<group>"; };
+		9384454F24FD1692008285B4 /* BeanApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanApiWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		9384453C24FCFE75008285B4 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				9384454F24FD1692008285B4 /* BeanApiWorker.swift */,
 			);
 			path = Worker;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				9384451C24FCF7BF008285B4 /* ViewController.swift in Sources */,
 				9384454C24FD05A6008285B4 /* BeanRouter.swift in Sources */,
 				9384454E24FD05FB008285B4 /* BeanEntity.swift in Sources */,
+				9384455024FD1692008285B4 /* BeanApiWorker.swift in Sources */,
 				9384451824FCF7BF008285B4 /* AppDelegate.swift in Sources */,
 				9384454224FCFEDB008285B4 /* BeanView.swift in Sources */,
 				9384454A24FD0578008285B4 /* BeanPresenter.swift in Sources */,
