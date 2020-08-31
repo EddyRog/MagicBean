@@ -25,16 +25,27 @@ class BeanView: UIViewController {
     
     // UI
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var priceHTLabel: UILabel!
+    @IBOutlet weak var quantityLabel: UILabel!
     
     // MARK: - MSG
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor?.fetchBean()
     }
+    
+    @IBAction func OrderBean(_ sender: UIStepper) {
+        print(" ▓ \(#line) ▓   (っ˘▽˘)っ ▓ \(showClass) ▓ ⊂(◕。◕⊂)  ( ˘ ³˘)♥ ▓ \(#function) ▓ ")
+    }
 }
 
 extension BeanView: BeanViewProtocol {
     func setView(with object: BeanViewModel) {
         self.nameLabel.text = object.name
+        self.descriptionTextView.text = object.description
+        self.priceHTLabel.text = object.priceHT
+        self.quantityLabel.text = object.quantity
+        
     }
 }

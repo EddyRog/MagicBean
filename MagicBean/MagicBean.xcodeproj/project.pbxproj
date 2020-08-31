@@ -94,12 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				9384453924FCFD8F008285B4 /* BeanModule */,
-				9384451724FCF7BF008285B4 /* AppDelegate.swift */,
 				9384451924FCF7BF008285B4 /* SceneDelegate.swift */,
-				9384451B24FCF7BF008285B4 /* ViewController.swift */,
-				9384452024FCF7C0008285B4 /* Assets.xcassets */,
-				9384452224FCF7C0008285B4 /* LaunchScreen.storyboard */,
-				9384452524FCF7C0008285B4 /* Info.plist */,
+				9384455124FD2EC5008285B4 /* other */,
 			);
 			path = MagicBean;
 			sourceTree = "<group>";
@@ -182,6 +178,18 @@
 				9384454524FD0448008285B4 /* BeanBuilder.swift */,
 			);
 			name = Builder;
+			sourceTree = "<group>";
+		};
+		9384455124FD2EC5008285B4 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				9384451724FCF7BF008285B4 /* AppDelegate.swift */,
+				9384451B24FCF7BF008285B4 /* ViewController.swift */,
+				9384452024FCF7C0008285B4 /* Assets.xcassets */,
+				9384452224FCF7C0008285B4 /* LaunchScreen.storyboard */,
+				9384452524FCF7C0008285B4 /* Info.plist */,
+			);
+			name = other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

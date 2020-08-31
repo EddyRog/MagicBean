@@ -17,7 +17,8 @@ class BeanBuilder {
         
         presenter.view = view
         interactor.presenter = presenter
-        
     }
+    
+    
     
 }

@@ -9,7 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeanView" customModule="MagicBean" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionTextView" destination="pcK-aL-FIb" id="t3d-7u-vTa"/>
                 <outlet property="nameLabel" destination="EKw-kM-gwH" id="bpD-RI-9ER"/>
+                <outlet property="priceHTLabel" destination="vpw-ie-5Qu" id="tW7-Zj-mZz"/>
+                <outlet property="quantityLabel" destination="Wey-iD-8Dr" id="ISD-ZN-zsc"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cF5-qN-DfN"/>
             </connections>
         </placeholder>
@@ -40,7 +43,7 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price HT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vpw-ie-5Qu" userLabel="priceht">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price HT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vpw-ie-5Qu" userLabel="priceht">
                     <rect key="frame" x="16" y="394" width="103" height="32"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -54,6 +57,9 @@
                 </label>
                 <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vXq-Ei-yqN">
                     <rect key="frame" x="265" y="394" width="94" height="32"/>
+                    <connections>
+                        <action selector="OrderBean:" destination="-1" eventType="valueChanged" id="cDq-s2-Lc5"/>
+                    </connections>
                 </stepper>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tva" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reB-5R-iLv">
                     <rect key="frame" x="136" y="608" width="83" height="47"/>
