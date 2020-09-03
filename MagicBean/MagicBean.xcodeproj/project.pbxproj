@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		9384451824FCF7BF008285B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384451724FCF7BF008285B4 /* AppDelegate.swift */; };
 		9384451A24FCF7BF008285B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384451924FCF7BF008285B4 /* SceneDelegate.swift */; };
-		9384451C24FCF7BF008285B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384451B24FCF7BF008285B4 /* ViewController.swift */; };
 		9384452124FCF7C0008285B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9384452024FCF7C0008285B4 /* Assets.xcassets */; };
 		9384452424FCF7C0008285B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9384452224FCF7C0008285B4 /* LaunchScreen.storyboard */; };
 		9384452F24FCF7C1008285B4 /* MagicBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384452E24FCF7C1008285B4 /* MagicBeanTests.swift */; };
-		9384454224FCFEDB008285B4 /* BeanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454124FCFEDB008285B4 /* BeanView.swift */; };
+		9384454224FCFEDB008285B4 /* BeanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454124FCFEDB008285B4 /* BeanViewController.swift */; };
 		9384454424FCFF22008285B4 /* BeanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9384454324FCFF22008285B4 /* BeanView.xib */; };
 		9384454624FD0448008285B4 /* BeanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454524FD0448008285B4 /* BeanBuilder.swift */; };
 		9384454824FD0532008285B4 /* BeanInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454724FD0532008285B4 /* BeanInteractor.swift */; };
@@ -37,14 +36,13 @@
 		9384451424FCF7BF008285B4 /* MagicBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9384451724FCF7BF008285B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9384451924FCF7BF008285B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9384451B24FCF7BF008285B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9384452024FCF7C0008285B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9384452324FCF7C0008285B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9384452524FCF7C0008285B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9384452A24FCF7C1008285B4 /* MagicBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9384452E24FCF7C1008285B4 /* MagicBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBeanTests.swift; sourceTree = "<group>"; };
 		9384453024FCF7C1008285B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9384454124FCFEDB008285B4 /* BeanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanView.swift; sourceTree = "<group>"; };
+		9384454124FCFEDB008285B4 /* BeanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanViewController.swift; sourceTree = "<group>"; };
 		9384454324FCFF22008285B4 /* BeanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeanView.xib; sourceTree = "<group>"; };
 		9384454524FD0448008285B4 /* BeanBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanBuilder.swift; sourceTree = "<group>"; };
 		9384454724FD0532008285B4 /* BeanInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanInteractor.swift; sourceTree = "<group>"; };
@@ -72,6 +70,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931BFDBC2501160800DFDEA4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9384453C24FCFE75008285B4 /* Worker */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		937ECF3925010AAA00AFCE56 /* Application Layer */ = {
+			isa = PBXGroup;
+			children = (
+				9384451924FCF7BF008285B4 /* SceneDelegate.swift */,
+				9384451724FCF7BF008285B4 /* AppDelegate.swift */,
+			);
+			name = "Application Layer";
+			sourceTree = "<group>";
+		};
+		937ECF3E25010B3C00AFCE56 /* Bean */ = {
+			isa = PBXGroup;
+			children = (
+				9384454124FCFEDB008285B4 /* BeanViewController.swift */,
+				9384454324FCFF22008285B4 /* BeanView.xib */,
+				9384454724FD0532008285B4 /* BeanInteractor.swift */,
+				9384454924FD0578008285B4 /* BeanPresenter.swift */,
+				9384454524FD0448008285B4 /* BeanBuilder.swift */,
+				9384454B24FD05A6008285B4 /* BeanRouter.swift */,
+			);
+			path = Bean;
+			sourceTree = "<group>";
+		};
+		937ECF3F25010B4B00AFCE56 /* BeanDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BeanDetail;
+			sourceTree = "<group>";
+		};
+		937ECF4125010B6D00AFCE56 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				931BFDBC2501160800DFDEA4 /* Service */,
+				9384453D24FCFE7B008285B4 /* Entity */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
 		9384450B24FCF7BF008285B4 = {
 			isa = PBXGroup;
 			children = (
@@ -93,8 +137,9 @@
 		9384451624FCF7BF008285B4 /* MagicBean */ = {
 			isa = PBXGroup;
 			children = (
-				9384453924FCFD8F008285B4 /* BeanModule */,
-				9384451924FCF7BF008285B4 /* SceneDelegate.swift */,
+				9384453924FCFD8F008285B4 /* Module */,
+				937ECF4125010B6D00AFCE56 /* DataLayer */,
+				937ECF3925010AAA00AFCE56 /* Application Layer */,
 				9384455124FD2EC5008285B4 /* other */,
 			);
 			path = MagicBean;
@@ -109,35 +154,13 @@
 			path = MagicBeanTests;
 			sourceTree = "<group>";
 		};
-		9384453924FCFD8F008285B4 /* BeanModule */ = {
+		9384453924FCFD8F008285B4 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				9384453A24FCFE64008285B4 /* View */,
-				9384453F24FCFE8D008285B4 /* Interactor */,
-				9384453E24FCFE82008285B4 /* Presenter */,
-				9384453D24FCFE7B008285B4 /* Entity */,
-				9384453B24FCFE6F008285B4 /* Router */,
-				9384454024FCFEAE008285B4 /* Builder */,
-				9384453C24FCFE75008285B4 /* Worker */,
+				937ECF3E25010B3C00AFCE56 /* Bean */,
+				937ECF3F25010B4B00AFCE56 /* BeanDetail */,
 			);
-			path = BeanModule;
-			sourceTree = "<group>";
-		};
-		9384453A24FCFE64008285B4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				9384454124FCFEDB008285B4 /* BeanView.swift */,
-				9384454324FCFF22008285B4 /* BeanView.xib */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9384453B24FCFE6F008285B4 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				9384454B24FD05A6008285B4 /* BeanRouter.swift */,
-			);
-			path = Router;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		9384453C24FCFE75008285B4 /* Worker */ = {
@@ -153,38 +176,13 @@
 			children = (
 				9384454D24FD05FB008285B4 /* BeanEntity.swift */,
 			);
-			path = Entity;
-			sourceTree = "<group>";
-		};
-		9384453E24FCFE82008285B4 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				9384454924FD0578008285B4 /* BeanPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		9384453F24FCFE8D008285B4 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				9384454724FD0532008285B4 /* BeanInteractor.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		9384454024FCFEAE008285B4 /* Builder */ = {
-			isa = PBXGroup;
-			children = (
-				9384454524FD0448008285B4 /* BeanBuilder.swift */,
-			);
-			name = Builder;
+			name = Entity;
+			path = ../Module/Bean/Entity;
 			sourceTree = "<group>";
 		};
 		9384455124FD2EC5008285B4 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				9384451724FCF7BF008285B4 /* AppDelegate.swift */,
-				9384451B24FCF7BF008285B4 /* ViewController.swift */,
 				9384452024FCF7C0008285B4 /* Assets.xcassets */,
 				9384452224FCF7C0008285B4 /* LaunchScreen.storyboard */,
 				9384452524FCF7C0008285B4 /* Info.plist */,
@@ -294,12 +292,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9384454824FD0532008285B4 /* BeanInteractor.swift in Sources */,
-				9384451C24FCF7BF008285B4 /* ViewController.swift in Sources */,
 				9384454C24FD05A6008285B4 /* BeanRouter.swift in Sources */,
 				9384454E24FD05FB008285B4 /* BeanEntity.swift in Sources */,
 				9384455024FD1692008285B4 /* BeanApiWorker.swift in Sources */,
 				9384451824FCF7BF008285B4 /* AppDelegate.swift in Sources */,
-				9384454224FCFEDB008285B4 /* BeanView.swift in Sources */,
+				9384454224FCFEDB008285B4 /* BeanViewController.swift in Sources */,
 				9384454A24FD0578008285B4 /* BeanPresenter.swift in Sources */,
 				9384454624FD0448008285B4 /* BeanBuilder.swift in Sources */,
 				9384451A24FCF7BF008285B4 /* SceneDelegate.swift in Sources */,

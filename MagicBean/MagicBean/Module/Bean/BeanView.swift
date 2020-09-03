@@ -8,10 +8,11 @@ protocol BeanViewProtocol: class {
     var presenter: BeanPresenterProtocol? {get set}
     var router: BeanRouterProtocol? {get set}
     
+    func set(withQuantity quantiy : String)
     func setView(with object: BeanViewModel)
 }
 
-class BeanView: UIViewController {
+class BeanViewController: UIViewController {
     // MARK: - MM
     // LOG
     private var showClass: String {
@@ -28,24 +29,27 @@ class BeanView: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var priceHTLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
+    @IBOutlet weak var gstLabel: UILabel!
     
     // MARK: - MSG
     override func viewDidLoad() {
         super.viewDidLoad()
         interactor?.fetchBean()
     }
-    
     @IBAction func OrderBean(_ sender: UIStepper) {
-        print(" ▓ \(#line) ▓   (っ˘▽˘)っ ▓ \(showClass) ▓ ⊂(◕。◕⊂)  ( ˘ ³˘)♥ ▓ \(#function) ▓ ")
+        let currentQuantity = Int(sender.value)
+        interactor?.update(quantity: currentQuantity)
     }
 }
 
-extension BeanView: BeanViewProtocol {
+extension BeanViewController: BeanViewProtocol {
+    func set(withQuantity quantiy: String) {
+        self.quantityLabel.text = quantiy
+    }
     func setView(with object: BeanViewModel) {
         self.nameLabel.text = object.name
         self.descriptionTextView.text = object.description
         self.priceHTLabel.text = object.priceHT
-        self.quantityLabel.text = object.quantity
-        
+        self.gstLabel.text = object.gst
     }
 }

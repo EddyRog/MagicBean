@@ -13,8 +13,8 @@ class BeanApiWorker: BeanApiWorkerProtocol {
         let entity = BeanEntity(name: "Bean magical",
                                 description: description,
                                 priceHT: 100.50,
-                                quantity: 0
-                                )
+                                tax: 50.0)
+        
         
         // send back data
         callBack(entity)

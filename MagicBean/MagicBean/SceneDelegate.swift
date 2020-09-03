@@ -24,15 +24,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.makeKeyAndVisible()
         
-        let beanView = BeanView(nibName: "BeanView", bundle: nil)
+        let beanView = BeanViewController(nibName: "BeanView", bundle: nil)
         let navController = UINavigationController(rootViewController: beanView)
-        
         window?.rootViewController = navController
-        
-        // builder VIP [not VIPER] Architecture
-//        BeanBuilder.buildModule(arroundView buildView)
+
         BeanBuilder.buildModule(arroundView: beanView)
-        
+
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

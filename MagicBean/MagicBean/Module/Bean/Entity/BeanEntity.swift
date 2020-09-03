@@ -2,9 +2,13 @@
 //  BeanEntity
 import Foundation
 
-struct BeanEntity {
+struct BeanEntity: Equatable {
     let name: String
     let description: String
     let priceHT: Float
-    let quantity: Int
+    let tax: Float
 }
+
+
+
+

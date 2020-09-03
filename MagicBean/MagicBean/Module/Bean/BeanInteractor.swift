@@ -5,6 +5,7 @@ import Foundation
 
 protocol BeanInteractorProtocol {
     func fetchBean()
+    func update(quantity: Int)
 }
 
 class BeanInteractor {
@@ -15,6 +16,7 @@ class BeanInteractor {
     private let apiWorker: BeanApiWorkerProtocol
     private var beanEntity: BeanEntity?
     
+    // init
     required init(withApiWorker apiWorker: BeanApiWorkerProtocol) {
         self.apiWorker = apiWorker
     }
@@ -23,17 +25,17 @@ class BeanInteractor {
 extension BeanInteractor: BeanInteractorProtocol {
     func fetchBean() {
         // demande a l'api de fetch les data
-//
-//        apiWorker.fetchCandy { [weak self] (candyEntity) in
-//            guard let strongSelf = self else { return }
-//            strongSelf.candyEntity = candyEntity
-//            strongSelf.presenter?.interactor(strongSelf, didFetch: candyEntity) // self:Interactor, connait Presenter, Presenter recoit un message pour titre interaction disant que interactor a DidFetch the CandyEntity
-//        }
         
         apiWorker.fetchBean { [weak self] (beanEntity) in
             guard let strongSelf = self else { return }
+            //            Reflexion🏙🏝 👾👯‍♀️👙🙍🏻‍♀️👄😺🏖🏞 send gst
             strongSelf.beanEntity = beanEntity
             strongSelf.presenter?.interactor(strongSelf, didFetch : beanEntity)
+            
         }
+    }
+    func update(quantity: Int) {
+        print("  💟🐝\(#line)💟▓▒░ quantity from update methode :  ░▒▓💟",quantity,"💟")
+        presenter?.interactor(self, didUpdate: quantity)
     }
 }
