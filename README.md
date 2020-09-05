@@ -3,7 +3,7 @@
 An example iOS project based on VIP clean architecture .
 
 
-![alt text](https://project.getcode.fr/magicbean/magicbeanpicture.png)
+![alt text](https://project.getcode.fr/magicbean/magicbeanpictures.png)
 
 [![Watch the video](https://project.getcode.fr/bmi/video.png)](https://project.getcode.fr/magicbean/magicbeanvideo.mp4)
 
