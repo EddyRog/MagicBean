@@ -10,10 +10,12 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeanViewController" customModule="MagicBean" customModuleProvider="target">
             <connections>
                 <outlet property="descriptionTextView" destination="pcK-aL-FIb" id="t3d-7u-vTa"/>
-                <outlet property="gstLabel" destination="reB-5R-iLv" id="QOm-EU-Hgk"/>
+                <outlet property="gstLabel" destination="reB-5R-iLv" id="LhD-hJ-tG3"/>
                 <outlet property="nameLabel" destination="EKw-kM-gwH" id="bpD-RI-9ER"/>
                 <outlet property="priceHTLabel" destination="vpw-ie-5Qu" id="tW7-Zj-mZz"/>
                 <outlet property="quantityLabel" destination="Wey-iD-8Dr" id="ISD-ZN-zsc"/>
+                <outlet property="subTotalLabel" destination="q85-OT-hIf" id="Cdy-1c-XHe"/>
+                <outlet property="totalNetLabel" destination="d2c-OT-0cd" id="gqe-17-ghc"/>
                 <outlet property="view" destination="iN0-l3-epB" id="cF5-qN-DfN"/>
             </connections>
         </placeholder>
@@ -76,13 +78,13 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total net $ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-OT-0cd">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total net $ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2c-OT-0cd">
                     <rect key="frame" x="227" y="608" width="148" height="47"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub total $ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q85-OT-hIf">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub total $ 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q85-OT-hIf">
                     <rect key="frame" x="227" y="553" width="148" height="47"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="47" id="x9X-6A-yRe"/>

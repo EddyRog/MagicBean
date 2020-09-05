@@ -10,6 +10,7 @@ protocol BeanViewProtocol: class {
     
     func set(withQuantity quantiy : String)
     func setView(with object: BeanViewModel)
+    func setView(with: PriceBeanViewModel)
 }
 
 class BeanViewController: UIViewController {
@@ -30,6 +31,8 @@ class BeanViewController: UIViewController {
     @IBOutlet weak var priceHTLabel: UILabel!
     @IBOutlet weak var quantityLabel: UILabel!
     @IBOutlet weak var gstLabel: UILabel!
+    @IBOutlet weak var subTotalLabel: UILabel!
+    @IBOutlet weak var totalNetLabel: UILabel!
     
     // MARK: - MSG
     override func viewDidLoad() {
@@ -51,5 +54,9 @@ extension BeanViewController: BeanViewProtocol {
         self.descriptionTextView.text = object.description
         self.priceHTLabel.text = object.priceHT
         self.gstLabel.text = object.gst
+    }
+    func setView(with object: PriceBeanViewModel) {
+        subTotalLabel.text =  object.subTotal
+        totalNetLabel.text = object.totalnet
     }
 }

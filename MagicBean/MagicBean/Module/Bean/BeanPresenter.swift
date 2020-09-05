@@ -11,10 +11,15 @@ struct BeanViewModel {
     let gst: String
 }
 
+struct PriceBeanViewModel {
+    let subTotal: String
+    let totalnet: String
+}
 protocol BeanPresenterProtocol: class {
     // delegate
     func interactor(_ interactor: BeanInteractorProtocol, didUpdate quantity: Int)
     func interactor(_ interactor: BeanInteractorProtocol, didFetch object: BeanEntity )
+    func interactor(_ interactor: BeanInteractorProtocol, didUpdateSubTotal: Float, _ totalNet:Float)
 }
 
 class BeanPresenter {
@@ -39,5 +44,15 @@ extension BeanPresenter: BeanPresenterProtocol {
                 gst: "GST \(object.tax) %"
         )
         view?.setView(with: beanViewModel)
+    }
+    
+    func interactor(_ interactor: BeanInteractorProtocol, didUpdateSubTotal subTotal: Float, _ totalNet: Float) {
+        let subtotal = "Sub Total $ \(subTotal)"
+        let totalNet = "Total net $ \(totalNet)"
+        let priceBeanViewModel =  PriceBeanViewModel(subTotal: subtotal, totalnet: totalNet)
+        
+        view?.setView(with: priceBeanViewModel)
+        //        let priceBeanViewModel = PriceBeanViewModel(subTotal: "SubTotal", totalnet: totalNet)
+//        view?.setView(with: PriceBeanViewModel)
     }
 }
