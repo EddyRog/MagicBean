@@ -36,6 +36,16 @@ extension BeanInteractor: BeanInteractorProtocol {
     }
     func update(quantity: Int) {
         print("  💟🐝\(#line)💟▓▒░ quantity from update methode :  ░▒▓💟",quantity,"💟")
+        // MARK: -
+        // TODO:
+        //update number for stepper
         presenter?.interactor(self, didUpdate: quantity)
+        
+        // calculate price
+        
+        
+        // MARK: -
+        
+        
     }
 }

@@ -25,7 +25,6 @@ class BeanPresenter {
 // MARK: - MSG
 extension BeanPresenter: BeanPresenterProtocol {
     func interactor(_ interactor: BeanInteractorProtocol, didUpdate quantity: Int) {
-        print("  💟🐝\(#line)💟▓▒░ Q ░▒▓💟",quantity,"💟")
         let quantity = "quantity : \(quantity)"
         self.view?.set(withQuantity: quantity)
     }

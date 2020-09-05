@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		937A73CD2503DA4D00C4ED9C /* BeanCalculWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937A73CC2503DA4D00C4ED9C /* BeanCalculWorker.swift */; };
+		937A73CF2503DAC900C4ED9C /* BeanCalculationNetWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937A73CE2503DAC900C4ED9C /* BeanCalculationNetWorkerTest.swift */; };
 		9384451824FCF7BF008285B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384451724FCF7BF008285B4 /* AppDelegate.swift */; };
 		9384451A24FCF7BF008285B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384451924FCF7BF008285B4 /* SceneDelegate.swift */; };
 		9384452124FCF7C0008285B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9384452024FCF7C0008285B4 /* Assets.xcassets */; };
 		9384452424FCF7C0008285B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9384452224FCF7C0008285B4 /* LaunchScreen.storyboard */; };
-		9384452F24FCF7C1008285B4 /* MagicBeanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384452E24FCF7C1008285B4 /* MagicBeanTests.swift */; };
 		9384454224FCFEDB008285B4 /* BeanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454124FCFEDB008285B4 /* BeanViewController.swift */; };
 		9384454424FCFF22008285B4 /* BeanView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9384454324FCFF22008285B4 /* BeanView.xib */; };
 		9384454624FD0448008285B4 /* BeanBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9384454524FD0448008285B4 /* BeanBuilder.swift */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		937A73CC2503DA4D00C4ED9C /* BeanCalculWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanCalculWorker.swift; sourceTree = "<group>"; };
+		937A73CE2503DAC900C4ED9C /* BeanCalculationNetWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanCalculationNetWorkerTest.swift; sourceTree = "<group>"; };
 		9384451424FCF7BF008285B4 /* MagicBean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicBean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9384451724FCF7BF008285B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9384451924FCF7BF008285B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,7 +43,6 @@
 		9384452324FCF7C0008285B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9384452524FCF7C0008285B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9384452A24FCF7C1008285B4 /* MagicBeanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagicBeanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9384452E24FCF7C1008285B4 /* MagicBeanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBeanTests.swift; sourceTree = "<group>"; };
 		9384453024FCF7C1008285B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9384454124FCFEDB008285B4 /* BeanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanViewController.swift; sourceTree = "<group>"; };
 		9384454324FCFF22008285B4 /* BeanView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeanView.xib; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		937A73CB2503D9F700C4ED9C /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				937A73CC2503DA4D00C4ED9C /* BeanCalculWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
 		937ECF3925010AAA00AFCE56 /* Application Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		937ECF3E25010B3C00AFCE56 /* Bean */ = {
 			isa = PBXGroup;
 			children = (
+				937A73CB2503D9F700C4ED9C /* Workers */,
 				9384454124FCFEDB008285B4 /* BeanViewController.swift */,
 				9384454324FCFF22008285B4 /* BeanView.xib */,
 				9384454724FD0532008285B4 /* BeanInteractor.swift */,
@@ -148,8 +159,8 @@
 		9384452D24FCF7C1008285B4 /* MagicBeanTests */ = {
 			isa = PBXGroup;
 			children = (
-				9384452E24FCF7C1008285B4 /* MagicBeanTests.swift */,
 				9384453024FCF7C1008285B4 /* Info.plist */,
+				937A73CE2503DAC900C4ED9C /* BeanCalculationNetWorkerTest.swift */,
 			);
 			path = MagicBeanTests;
 			sourceTree = "<group>";
@@ -243,6 +254,7 @@
 					};
 					9384452924FCF7C0008285B4 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 						TestTargetID = 9384451324FCF7BF008285B4;
 					};
 				};
@@ -292,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9384454824FD0532008285B4 /* BeanInteractor.swift in Sources */,
+				937A73CD2503DA4D00C4ED9C /* BeanCalculWorker.swift in Sources */,
 				9384454C24FD05A6008285B4 /* BeanRouter.swift in Sources */,
 				9384454E24FD05FB008285B4 /* BeanEntity.swift in Sources */,
 				9384455024FD1692008285B4 /* BeanApiWorker.swift in Sources */,
@@ -307,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9384452F24FCF7C1008285B4 /* MagicBeanTests.swift in Sources */,
+				937A73CF2503DAC900C4ED9C /* BeanCalculationNetWorkerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +499,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MagicBeanTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
@@ -496,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Dee-R.MagicBeanTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MagicBean.app/MagicBean";
@@ -507,6 +522,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MagicBeanTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
