@@ -80,14 +80,6 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		937A73CB2503D9F700C4ED9C /* Workers */ = {
-			isa = PBXGroup;
-			children = (
-				937A73CC2503DA4D00C4ED9C /* BeanCalculWorker.swift */,
-			);
-			path = Workers;
-			sourceTree = "<group>";
-		};
 		937ECF3925010AAA00AFCE56 /* Application Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +92,6 @@
 		937ECF3E25010B3C00AFCE56 /* Bean */ = {
 			isa = PBXGroup;
 			children = (
-				937A73CB2503D9F700C4ED9C /* Workers */,
 				9384454124FCFEDB008285B4 /* BeanViewController.swift */,
 				9384454324FCFF22008285B4 /* BeanView.xib */,
 				9384454724FD0532008285B4 /* BeanInteractor.swift */,
@@ -177,6 +168,7 @@
 		9384453C24FCFE75008285B4 /* Worker */ = {
 			isa = PBXGroup;
 			children = (
+				937A73CC2503DA4D00C4ED9C /* BeanCalculWorker.swift */,
 				9384454F24FD1692008285B4 /* BeanApiWorker.swift */,
 			);
 			path = Worker;
